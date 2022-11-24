@@ -10,8 +10,22 @@ isIphone = ua.match(/(iPhone\sOS)\s([\d_]+)/),
 isAndroid = ua.match(/(Android)\s+([\d.]+)/),
 ismb = isIphone || ipad || isAndroid;
 if(!ismb)
-{ window.location.href="https://cpyem.github.io/";}
+{ window.location.href="https://pc.rlcd.site/";}
 </script>-->
+<script type="text/javascript">
+  var system = {};
+  var p = navigator.platform;
+  var u = navigator.userAgent;
+  system.win = p.indexOf("Win") == 0;
+  system.mac = p.indexOf("Mac") == 0;
+  system.x11 = (p == "X11") || (p.indexOf("Linux") == 0);
+  if (system.win || system.mac || system.xll) {//如果是PC转
+    if (u.indexOf('Windows Phone') > -1) {  //win手机端
+    }else {
+      window.location.href = "https://pc.rlcd.site/";
+    }
+  }
+</script>
 <title>手机访问页</title>
 <link rel="stylesheet" rev="stylesheet" href="style/tz.css" type="text/css" media="all">
 </head>
@@ -25,7 +39,7 @@ if(!ismb)
     <p>②不支持电脑，请使用手机访问！</p>
     <p>③不支持电脑，请使用手机访问！</p>
 	<p class="f-red">重要的事情说三遍！</p>
-    <p class="ta-c mb10"><a href="http://b.rlcd.site/" class="tx-btn tx-btn-big dp-b bg-red">立即进入</a></p>
+    <p class="ta-c mb10"><a href="http://b.rlcd.site/m/" class="tx-btn tx-btn-big dp-b bg-red">立即进入</a></p>
                 </div>
             </div>
         </div>
